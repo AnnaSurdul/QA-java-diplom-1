@@ -3,12 +3,8 @@ package praktikum;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.mockito.Mock;
-import org.mockito.Mockito;
 import org.mockito.Spy;
 import org.mockito.junit.MockitoJUnitRunner;
-import praktikum.Bun;
-import praktikum.Burger;
-import praktikum.Ingredient;
 
 import static org.junit.Assert.assertEquals;
 
@@ -30,7 +26,6 @@ public class BurgerTest {
     @Test
     public void shouldSetBuns() {
         burger.setBuns(bun);
-//        Mockito.verify(burger, Mockito.times(1)).setBuns(bun);
         assertEquals(bun, burger.bun);
     }
 
